@@ -16,8 +16,8 @@ export default class AuthController {
       const token = await auth.use('api').attempt(email,password, {expiresIn: '1day'})
       const user = await User.findByOrFail('email', email)
       return {token,user}
-    }catch(error){
-      response.status(401).send("Login ou senha incorretos")
-    }
+    //}catch(error){
+    //  response.status(401).send("Login ou senha incorretos")
+    //}
   }
 }
