@@ -7,7 +7,8 @@
     "build": "node ace build --production",
     "start": "node server.js",
     "test": "node ace test",
-    "migrate": "node ace migration:run"
+    "migrate": "node ace migration:run",
+    "queue": "node ace queue:listen"
   },
   "devDependencies": {
     "@adonisjs/assembler": "^5.9.5",
@@ -26,6 +27,8 @@
     "@adonisjs/core": "^5.9.0",
     "@adonisjs/lucid": "^18.4.0",
     "@adonisjs/repl": "^3.1.11",
+    "@rlanz/bull-queue": "^1.0.6",
+    "axios": "^1.6.0",
     "expo": "^49.0.11",
     "expo-constants": "~14.4.2",
     "expo-device": "~5.4.0",
