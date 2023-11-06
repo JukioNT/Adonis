@@ -5,7 +5,7 @@ import { column, beforeSave, BaseModel } from '@ioc:Adonis/Lucid/Orm'
 export default class User extends BaseModel {
   @column({ isPrimary: true })
   public id: number
-  
+
   @column()
   public name: string
   
@@ -13,7 +13,7 @@ export default class User extends BaseModel {
   public email: string
 
   @column()
-  public token: string
+  public token: string | null
 
   @column({ serializeAs: null })
   public password: string

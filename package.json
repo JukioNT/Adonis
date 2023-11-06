@@ -1,11 +1,11 @@
 {
-  "name": "AdonisJS",
+  "name": "adonis2023_api",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "node ace serve --watch",
     "build": "node ace build --production",
-    "start": "node server.js",
+    "start": "node build/server.js",
     "test": "node ace test",
     "migrate": "node ace migration:run",
     "queue": "node ace queue:listen"
@@ -30,14 +30,14 @@
     "@rlanz/bull-queue": "^1.0.6",
     "axios": "^1.6.0",
     "expo": "^49.0.11",
-    "expo-constants": "~14.4.2",
-    "expo-device": "~5.4.0",
-    "expo-notifications": "~0.20.1",
     "luxon": "^3.3.0",
     "mysql2": "^3.6.0",
     "pg": "^8.11.2",
     "proxy-addr": "^2.0.7",
     "reflect-metadata": "^0.1.13",
-    "source-map-support": "^0.5.21"
+    "source-map-support": "^0.5.21",
+    "expo-notifications": "~0.20.1",
+    "expo-device": "~5.4.0",
+    "expo-constants": "~14.4.2"
   }
 }
